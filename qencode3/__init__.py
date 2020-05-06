@@ -31,6 +31,8 @@ from . exeptions import QencodeClientException, QencodeTaskException
 
 from . tools import generate_aws_signed_url
 
+from . tus_uploader import UploadStatus, upload
+
 
 
 __version__ = "0.9.27"
