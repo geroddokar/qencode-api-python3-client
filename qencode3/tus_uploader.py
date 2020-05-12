@@ -18,4 +18,5 @@ def upload(file_path=None, url=None, chunk_size=None, log_func=None):
         tus_url = get_tus_from_url(url_storage)
         return UploadStatus(url=tus_url, status='Ok')
     except:
-        return UploadStatus(error='error loading file using tus', status='Ok')
+       print('Error uploading file to ' + url)
+       raise
